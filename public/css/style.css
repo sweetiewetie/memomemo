@@ -197,7 +197,10 @@ label {
 }
 
 #pageinButton{
-  margin: 0 0 0 11%;
+  margin: 0% 0 0% 11%;
+}
+#createPageButton{
+  margin: 2% 0%;
 }
 #createMemoButton{
   margin:2% 0%;
