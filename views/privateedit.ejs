@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+    <body>
+        <%- include('layouts/navbar'); -%>
+            <div class="create-container">
+                <!-- Main Content-->
+                <form action="/privatememo/update/<%=memo._id %>" method="Post" enctype="multipart/form-data">
+                    <div class="pagename">
+                    <h1>Edit Private Memo</h1></div>
+                    <br><br>
+                    <hr />
+                    <br />
+                    <div class="control-group">
+                        <div class="form-group">
+                            <label>Title</label><br><br>
+                            <input contentEditable="true" class="form-control" id="title" name="title" type="text" value="<%= memo.title %>">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group">
+                            <label>Description</label><br><br>
+                            <textarea contentEditable= "true" class="form-control " id="body" name="body" cols="200" rows="40"><%= memo.body %></textarea>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="control-group">
+                        <div class="form-group">
+                            <label>Category</label>
+                            <input type="text" class="form-control" id="category" name="category" value="<%= memo.category %>">
+                        </div>
+                    </div>
+                    
+                    <button class="btn" id="createPageButton" type="submit">Save</button>
+                </form>
+    </body>
+
+</html>

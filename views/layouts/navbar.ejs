@@ -1,0 +1,32 @@
+<!-- Navigation -->
+<nav id="mainNav">
+  <div class="navi-container">
+    <a class="navbar-logo" href="/">MEMOMEMO</a>
+
+    <ul class="nav-ul">
+      <li class="nav-item">
+        <a class="nav-link" href="/memohome">Memo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/todos">Todolist</a>
+      </li>
+
+      <% if(loggedIn) { %>
+        <li class="nav-item">
+          <a class="nav-link" href="/auth/logout">Log out</a>
+        </li>
+        <%}%>
+
+          <% if(!loggedIn) { %>
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/login">Login</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/auth/signup">Sign up</a>
+            </li>
+            <%}%>
+
+    </ul>
+  </div>
+</nav>

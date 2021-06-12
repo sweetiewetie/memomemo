@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+    <body>
+        <%- include('layouts/navbar'); -%>
+        <div class="container">
+            <div class="pagein"></div>
+            <div class="memohome-container">
+                <div class="memo-group" id="pageIn">Page In</div>             
+                <div class="pagewrap">
+                    <div class="closebtn"><a href="#">close</a></div>
+                    <div>
+                        <div class="pagein-container">
+                          <!-- for browser to know tha tthe form contains mutli media. will encripy multie media and send to server -->
+                          <form action="/memo/public/page" method="POST" enctype="multipart/form-data">
+                            <div class="control-group">
+                              <div class="form-group">
+                                <label>Page ID</label>&nbsp;&nbsp;&nbsp;
+                                <input type="text" class="form-control" placeholder="Page ID" id="pageId" name="pageId">              
+                              </div>
+                              <div class="form-group">
+                                <label>Page PW</label>
+                                <input type="password" class="form-control" placeholder="Page PW" id="pagePW" name="pagePW">              
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <button type="submit" class="btn" id="pageinButton">>>Page In</button>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="memo-group">
+                    <a class="link" href="/memo/public/createpage">Create Page</a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

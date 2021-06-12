@@ -1,0 +1,223 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  height:100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.5;
+  color: black;
+  background-color: white;
+  height:100%;
+}
+
+/* navigation bar css */
+.navi-container{
+  position: fixed;
+  top: 0%;
+  width : 100%;
+  background-color: hsl(0, 0%, 0%);
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+
+.nav-ul{
+  list-style: none;
+  padding : 0;
+  margin : 0;
+  float : right;
+}
+
+.nav-item{
+  float : left;
+}
+
+.nav-link{
+  display: inline-block;
+  line-height: 50px;
+  padding : 0 10px;
+  font-size : 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  float: left;
+  line-height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  color: #faf9f8;
+  text-decoration: none;
+}
+
+/* login.ejs signup.ejs */
+.all-group-container{
+  position: absolute;
+  top:10%;
+  width: 100%;
+  height: 20%;
+}
+
+.page-heading h1{
+  font-size : 60px;
+  color : #1a1a1a;
+  text-align:center; 
+}
+
+.user-form{
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-form label{
+  font-size: large;
+}
+
+.form-element {
+  padding : 20px;
+}
+
+.form-input {
+  border-style: none;
+  margin-top : 20px;
+  font-size: large;
+  
+}
+
+.form-btn {
+  text-align: center;
+}
+
+.form-element .btn{
+  display : inline-block;
+  padding: 10px 30px;
+  font-size: large;
+  border-style: none;
+  color: #313131;
+  font-weight: 600;
+}
+
+.user-form hr{
+  margin : 0;
+}
+
+body {
+  margin :0;
+}
+
+/* mainhome.js */
+.mainhome-group-container{
+  position : absolute;
+  padding-top:13%;
+  width: 100%;
+  height:100%;
+  text-align: center;
+  margin: 0 auto ;
+  background-image: url("note.jpg");
+  background-size:cover;
+}
+
+.wel {
+  margin : 30px 0;
+  font-size: xx-large;
+  font-weight: 200;
+}
+
+.signuplink{
+  margin-top : 100px;
+}
+
+.logo{
+  font-weight: 800;
+}
+
+/* todolist */
+.all-todo-container {
+  position:absolute;
+  top : 20%;  
+  width: 100%;
+}
+
+.all-todo-group{
+  border: #000000 solid 2px;
+  width: 80%;
+  padding : 20px 0px 100px 0px;
+  margin: 0px auto;
+}
+
+header{
+  text-align: center;
+}
+
+header h1{
+  font-size: 60px;
+  font-weight: 300;
+  margin: 80px 0 25px;
+  color: #000000;
+}
+
+header h1 span {
+  font-weight: 700;
+}
+
+.form {
+  width: 70%;
+  margin: 50px auto 20px;
+}
+
+#todoInput {
+  width: 100%;
+  height: 60px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #212830;
+  outline: none;
+  font: 300 28px 'arial', sans-serif;
+  padding: 10px;
+  color: #11171d;
+}
+
+.list{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.task{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  padding: 0 20px;
+  color: #1c1f22;
+  transition: all .3s ease;
+}
+
+.task:hover {
+  cursor: pointer;
+}
+
+.task:hover span {
+  opacity: 1;
+}
+
+.done{
+  text-decoration: line-through;
+  color: #bdc3c7; 
+}
+
+li span {
+  float: right;
+  color: #c0392b;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+li span:hover {
+  color: #e74c3c;
+}
+

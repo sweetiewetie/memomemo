@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header2'); -%>
+  <body>
+    <%- include('layouts/navbar'); -%>
+
+      <div class="all-todo-container">
+        <div class="all-todo-group">
+          <header>
+            <h1> TODO <span> list </span> </h1>
+          </header>
+          <section class="form">
+            <input type="text" id="todoInput" placeholder="Add todo!">
+            <!-- <button class="btn todo-btn">Add todo</button> -->
+          </section>
+          <ul class="list">
+          </ul>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="/js/todolist.js"> </script>
+  </body>
+
+</html>

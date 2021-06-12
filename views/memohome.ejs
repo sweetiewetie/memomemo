@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+    <body>
+        <%- include('layouts/navbar'); -%>
+            <div class="container">
+                <div class="memohome-container">
+                    <div class="memo-group">
+                        <a class="link" href="/memo/public">Public<br>Memo</a>
+                        <div class="hover-background"></div>
+                    </div>
+                    <div class="memo-group">
+                        <a class="link" href="/memo/private/<%= loggedIn %>">Private<br>Memo</a>
+                        <div class="hover-background"></div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

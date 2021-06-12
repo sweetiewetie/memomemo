@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+    <body>
+        <%- include('layouts/navbar'); -%>
+            <div class="create-container">
+                <!-- Page Header-->              
+                <header class="masthead">
+                    <div class="post-heading">
+                        <h1>
+                            <%= publicpage.title %>
+                        </h1>
+                        <span class="meta">
+                            Last Modification :
+                            <%= publicpage.finaldate.toDateString() %>
+                        </span>
+                    </div>
+                </header>
+                <!-- Post Content-->
+                <article class="publicarticle">                  
+                            <pre><%= publicpage.body %></pre>
+                </article>              
+             </form>
+             <br><br>
+             <a class="btn " href="/memo/public/edit/<%= publicpage._id %>">EDIT</a>
+             <a  class="btn " href="/memo/public/delete/<%= publicpage._id %>">DELETE</a>
+            </div>
+    </body>
+
+</html>

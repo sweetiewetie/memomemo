@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+    <body>
+        <%- include('layouts/navbar'); -%>
+            <div class="create-container">
+                <!-- Main Content-->
+                <form action="/privatememo/store" method="Post" enctype="multipart/form-data">
+                    
+                    <div class="pagename">
+                    <h1>Create New Private Memo</h1></div>
+                    <br><br>
+                    <hr />
+                    <br />
+
+                    <div class="control-group">
+                        <div class="form-group">
+                            <label>Title</label><br><br>
+                            <input class="form-control" id="title" name="title" type="text" placeholder="Title">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group">
+                            <label>Description</label><br><br>
+                            <textarea class="form-control" id="body" name="body" cols="200" rows="40"></textarea>
+
+                        </div>
+                    </div>
+                    <br />
+                    <div class="control-group">
+                        <div class="form-group">
+                            <label>Category</label>
+                            <input contentEditable = "true" type="text" class="form-control" id="category" name="category" value="<%= getCategory %>">
+                        </div>
+                    </div>
+                    
+                    <br />
+                    <input type="hidden" name="userid" value= "<%= loggedIn %>">
+                    <button class="btn" id="createMemoButton" type="submit">Send</button>
+                </form>
+    </body>
+</html>

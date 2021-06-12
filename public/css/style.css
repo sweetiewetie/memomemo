@@ -1,0 +1,282 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  height:100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+  background-color: white;
+  height:100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height:100%;
+  background-image: url('note.jpg');
+  background-size:cover;
+}
+.create-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
+.memohome-container {
+  position: relative;
+  padding-top: 20%;
+  width: 100%;
+  
+}
+
+#pageIn:hover {
+  text-decoration: underline;
+}
+
+.pagewrap {
+  display: none;
+  width: 80%;
+  height: 180px;
+  position: absolute;
+  top: 40%;
+  margin:0 10% 0 10%;
+  padding:10% 0 10% 0;
+  background: #ffffffe1;
+  z-index: 2;
+}
+
+.pagein {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.closebtn {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+.closebtn>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(https://img.icons8.com/metro/26/000000/close-window.png);
+  text-indent: -9999px;
+}
+
+.pagein-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.memo-group {
+  position: relative;
+  display: inline-block;
+  width: 35%;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.link {
+  text-align: center;
+  color: black;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+div.pagename {
+  padding-top: 5%;
+}
+.memo-page{
+  width:80%;
+  margin-left:10%;
+  margin-top: 2%;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+}
+.CatName {
+  padding: 2% 0% 2% 0%;
+  text-align: center;
+  
+}
+
+.memo-preview {
+  display: none;
+  width: 100%;
+  margin-bottom: 2%;
+  
+}
+.memo-page:hover .memo-preview{
+  display:block;
+}
+.memo-page:hover .CatName{
+  text-align: left;
+}
+.memo-title {
+  margin-bottom:3%;
+  font-size:large;
+  text-align:left;
+}
+.memobody{
+  display:none;
+  text-align:left;
+}
+.memo-title:hover a{
+  color:#79ac04;
+  font-size:larger;
+  text-decoration: underline;
+}
+.memo-title:hover .memobody{
+  display:block;
+}
+.form-group {
+  height: 20%;
+}
+.create-form-group {
+  height: 20%;
+  display:inline-block;
+  
+}
+
+label {
+  font-size: x-large;
+  padding: 10px;
+}
+
+.form-control {
+  padding: 8px;
+}
+
+.control-group{
+  margin-top:2%;
+  margin-left:-3%;
+}
+
+.btn{
+  padding:8px;
+  border:none;
+  background:transparent;
+  color:#555555;
+  font-size:large;
+}
+.btn:hover{
+  font-weight:bold;
+  color:#000000;
+}
+.memobtn{
+  position:relative;
+  left:45%;
+}
+
+#pageinButton{
+  margin: 0 0 0 11%;
+}
+#createMemoButton{
+  margin:2% 0%;
+}
+header{
+  padding-top:5%;
+}
+article{
+  border:1px solid black;
+  overflow:auto;
+  width:80%;
+  height:50%;
+  margin-left:8%;
+  padding:2%;
+  border-right:none;
+  border-left:none;
+} 
+
+.publicarticle{
+  width:80%;
+  margin-left:8%;
+  
+  text-align:left;
+}
+input{
+  border:none;
+  border-bottom: 1px solid black;
+}
+textarea{
+  margin-left:5%;
+  border:1px solid black;
+  border-right:none;
+  border-left:none;
+  font-size:large;
+}
+#title{
+  width: 82%;
+  margin-left:5%;
+  font-size:large;
+ 
+}
+
+/* navigation bar css */
+
+.navi-container {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+
+.nav-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-link {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  float: left;
+  line-height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  color: #faf9f8;
+  text-decoration: none;
+}

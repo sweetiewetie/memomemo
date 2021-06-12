@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+    <body>
+        <%- include('layouts/navbar'); -%>
+            <div class="create-container">
+                <!-- Page Header-->
+                <header class="masthead">
+                    <div class="post-heading">
+                        <h1>
+                            <%= memo.title %>
+                        </h1>
+
+                    </div>
+                </header>
+                <!-- Post Content-->
+                <article>
+                    <pre><%= memo.body %></pre>
+                </article>
+                <br><br>
+                <a class="btn " href="/memo/private/edit/<%= memo._id %>">EDIT</a>
+                <a class="btn " href="/memo/private/delete/<%= memo._id %>">DELETE</a>
+            </div>
+    </body>
+
+</html>

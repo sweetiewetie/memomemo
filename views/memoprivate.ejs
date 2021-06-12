@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+
+    <body>
+        <%- include('layouts/navbar'); -%>
+            <div class="pagename">
+                <h1>Private Memo</h1>
+            </div>
+            <p />
+            <div class="memo-container">
+
+                <% var j=0; var divCat=0; %>
+                    <% for (j; j<memoes.length; j++){ %>
+                        <% if (divCat !=memoes[j].category) { divCat=memoes[j].category; %>
+                            <div class="memo-page">
+                                <div class="CatName memo">
+                                    <h2>
+                                        <%= "#" + divCat %>
+                                    </h2>
+                                </div>
+                                <div class="memo-preview" id="<%= divCat %>">
+                                    <% for (var i=0; i<memoes.length; i++) { %>
+                                        <% if (memoes[i].category==divCat) { console.log("ok") %>
+                                            <div class="memo-title " id="privatememo">
+                                                <h3><a class="link" href="/memo/privatememo/<%= memoes[i]._id %>">
+                                                        <%= memoes[i].title %>
+                                                    </a></h3>
+                                                <div class="memobody">
+                                                    <%= memoes[i].body %>
+                                                </div>
+                                            </div>
+                                            <% } %>
+                                                <% } %>
+                                                    <form action="/memo/private/add/<%= memoes[j]._id %>" method="Post"
+                                                        enctype="multipart/form-data">
+
+                                                        <button class="btn memobtn" type="submit">ADD MEMO</button>
+                                                    </form>
+                                </div>
+                            </div>
+            </div>
+            <% } else {continue;} %>
+                <% } %>
+                    <br><br>
+                    <form action="/memo/private/add" method="Post" enctype="multipart/form-data">
+                        <button class="btn" type="submit">ADD CATEGORY</button>
+                    </form>
+    </body>
+
+</html>
